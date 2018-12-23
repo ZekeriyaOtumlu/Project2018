@@ -32,6 +32,7 @@ If we don't have a constructor declared, what is called during the object creati
 What is "this" keyword in java ?
 What is "super" keyword in java? How many possible way can you use?
 What is JVM stand for ?
+Java Virtual Machine
 Is JVM platform independent?
 What version of java are you using?
 What is JAR stand for ?
