@@ -16,6 +16,20 @@ import java.util.List;
  * Created by mrahman on 09/09/18.
  */
 
+package databases;
+import com.mongodb.BasicDBObject;
+import com.mongodb.MongoClient;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
+import parser.Student;
+import java.util.ArrayList;
+import java.util.List;
+/**
+ * Created by mrahman on 09/09/18.
+ */
+
 public class ConnectToMongoDB {
 
     public static MongoDatabase mongoDatabase = null;
@@ -96,7 +110,6 @@ public class ConnectToMongoDB {
         }
         return list;
     }
-
     public static void main(String[] args){
         insertIntoToMongoDB(new User("Naomi Chan", "4493","07-1996"));
         List<User> user = readUserProfileFromMongoDB();
