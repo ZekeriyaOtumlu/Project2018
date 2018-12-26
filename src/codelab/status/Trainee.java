@@ -37,9 +37,7 @@ public class Trainee implements Comparable<Trainee> {
     public void setNumberOfExercisesSolved(int numberOfExercisesSolved) {
         this.numberOfExercisesSolved = numberOfExercisesSolved;
     }
-
     public int compareTo(Trainee trainee){
         return trainee.getNumberOfExercisesSolved() - this.getNumberOfExercisesSolved();
     }
-
 }
