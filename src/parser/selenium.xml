@@ -5,7 +5,7 @@
     <lastName>Khan</lastName>
     <score>89</score>
   </student>
-    <student id="2">
+  <student id="2">
     <firstName>Asif</firstName>
     <lastName>Roni</lastName>
     <score>95</score>
@@ -26,7 +26,6 @@
     <score>78</score>
   </student>
 </StudentInfo>
-
 
 
 
