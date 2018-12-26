@@ -1,10 +1,8 @@
 package json.parser;
-
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -18,9 +16,7 @@ public class JsonReaderUtil {
 
     /*
       ToDo:API is given, This Rest API will give you a Json Array. It is parsed partially. Your task is to give the following output.
-
       output:
-
      "mrahman@gmail.com" "Matiur Rahman" "400k" "Finance"
      "mrahman@gmail.com" "Rohan Rahman" "100k" "Engineering"
      "kafil@gmail.com" "Kafil" "200k" "Backend End Team"
@@ -32,9 +28,7 @@ public class JsonReaderUtil {
      "mrahman2@gmail.com" "Mizanur Rahman" "405k" "Finance"
      "mdtaque@gmail.com" "rifat taque" "400k" "QA"
      "mdtaque@gmail.com" "rifat taque" "400k" "QA"
-
      */
-
     public static void main(String[] args)throws MalformedURLException, IOException {
         String sURL = "http://info.venturepulse.org:8080/service-webapp/api/AllEmployeeResources";
         Employee emp = null;
@@ -54,15 +48,7 @@ public class JsonReaderUtil {
             try {
                 JsonObject jsonobject = jsonArray.get(i).getAsJsonObject();
                 //you code start here
-
-
-
-
-
-
-
             }catch(Exception ex){
-
             }
         }
         //Print to the console.
