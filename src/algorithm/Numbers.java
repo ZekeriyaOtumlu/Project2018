@@ -21,24 +21,24 @@ public class Numbers {
 	 */
 
 	public static void main(String[] args) throws Exception {
-		
-		int [] num = new int[1000000];
-		storeRandomNumbers(num);
-		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-		//Selection Sort
-		Sort algo = new Sort();
-		algo.selectionSort(num);
-		long selectionSortExecutionTime = algo.executionTime;
-		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
-        connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
-        List<String> numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
-        printValue(numbers);
-		int n = num.length;
-		randomize (num, n);
-		//Insertion Sort
-		algo.insertionSort(num);
-		long insertionSortExecutionTime = algo.executionTime;
-		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
+
+//		int [] num = new int[1000000];
+//		storeRandomNumbers(num);
+//		//ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+//		//Selection Sort
+//		Sort algo = new Sort();
+//		algo.selectionSort(num);
+//		long selectionSortExecutionTime = algo.executionTime;
+//		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
+//        connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
+//        List<String> numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
+//        printValue(numbers);
+//		int n = num.length;
+//		randomize (num, n);
+//		//Insertion Sort
+//		algo.insertionSort(num);
+//		long insertionSortExecutionTime = algo.executionTime;
+//		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 
 		//By following above, Continue for rest of the Sorting Algorithm....
 
@@ -46,7 +46,6 @@ public class Numbers {
 
 
 		//Come to conclusion about which Sorting Algo is better in given data set.
-
 		System.out.println("this might take a while ..Please be patient\n");
 		int[] num = new int[1000000];
 		storeRandomNumbers(num);
@@ -109,9 +108,6 @@ public class Numbers {
 //		}
 		System.out.println("\nBased on the average runtime from each of these Algorithms I have concluded that BucketSort is the fastest sorting algorithm for large datasets");
 	}
-
-
-
 
 	public static void storeRandomNumbers(int [] num){
 		Random rand = new Random();
